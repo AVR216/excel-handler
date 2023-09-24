@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb # la URL de la base de datos en memoria H2
+    username: sa # el nombre de usuario de la base de datos
+    password: 1234 # la contraseña de la base de datos
+    driver-class-name: org.h2.Driver # el nombre de la clase del driver JDBC
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect # el dialecto de Hibernate para H2
+    hibernate:
+      ddl-auto: update # la estrategia para generar el esquema de la base de datos
+  h2:
+    console:
+      enabled: true # habilitar la consola web de H2
+      path: /h2-console # el path para acceder a la consola web de H2
+      
+upload:
+  directory: C:\Users\jhonvillalba\repositorios\PeriferiaIT\Almaviva\Entregables\HU015
